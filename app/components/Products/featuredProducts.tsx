@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { ShoppingCart } from "lucide-react";
-import { Product } from "@/types/products";
 
 const FeaturedProducts = () => {
   return (
