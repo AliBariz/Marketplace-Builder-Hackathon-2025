@@ -11,8 +11,9 @@ import { urlFor } from "@/sanity/lib/client";
 import { addToCart } from "@/app/components/actions/actions";
 import { Product } from "@/types/products";
 import Swal from "sweetalert2";
+import { Suspense } from "react";
 
-export default function Products() {
+function Products() {
   const [products, setProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]); // New state for filtered products
   const searchParams = useSearchParams();
@@ -90,10 +91,12 @@ export default function Products() {
   );
 }
 
-function ProductsComponent() {
+ function Page() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Products />
     </Suspense>
   );
 }
+
+export default Page
