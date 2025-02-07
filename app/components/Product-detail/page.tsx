@@ -6,7 +6,7 @@ import { urlFor } from '@/sanity/lib/client'
 import { useState } from 'react'
 
 
-export const ProductDetail = () => {
+const ProductDetail = () => {
      const [products] = useState<Product[]>([]);
   return (
     <div>
@@ -30,3 +30,5 @@ export const ProductDetail = () => {
     </div>
   )
 }
+
+export default ProductDetail;
