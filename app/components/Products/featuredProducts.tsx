@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ShoppingCart } from "lucide-react";
 import { Product } from "@/types/products";
 
-const FeaturedProducts = (product:Product) => {
+const FeaturedProducts = () => {
   return (
     <section className="p-8 mb-8 pb-16 rounded-xl md:[45%]">
       <h2 className="text-2xl font-bold mb-4">Featured Products</h2>
