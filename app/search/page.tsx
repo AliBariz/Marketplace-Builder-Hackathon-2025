@@ -89,3 +89,11 @@ export default function Products() {
     </div>
   );
 }
+
+function ProductsComponent() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Products />
+    </Suspense>
+  );
+}
