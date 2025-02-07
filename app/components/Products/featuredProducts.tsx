@@ -6,18 +6,6 @@ import { Product } from "@/types/products";
 import Swal from "sweetalert2";
 import { addToCart } from "../actions/actions";
 
- const handleAddToCart = (e:React.MouseEvent, product:Product) => {
-    e.preventDefault();
-    Swal.fire({
-      position: 'top-center',
-      icon: 'success',
-      title: `${product.title} added to cart`,
-      showConfirmButton: false,
-      timer: 1000
-    });
-    addToCart(product);
-  }
-
 const FeaturedProducts = (product:Product) => {
   return (
     <section className="p-8 mb-8 pb-16 rounded-xl md:[45%]">
