@@ -13,8 +13,7 @@ const FeaturedProducts = (product:Product) => {
             <Image src="/hackaton-images/chair-white.png" alt="Chair-white" width={100} height={100} className="w-full h-50 mb-2 rounded-xl  transition-transform duration-300 ease-in-out hover:scale-110" />
             <h3 className="text-teal-600">Library Stool Chair</h3>
             <p>$20</p>
-            <button className=" bg-teal-600 border text-white rounded-xl p-2 flex hover:rounded-none hover:duration-200 ml-auto mb-10 -mt-10 hover:bg-white hover:text-teal-600 md:[45%]"
-            onClick={(e) => handleAddToCart(e, product)}>
+            <button className=" bg-teal-600 border text-white rounded-xl p-2 flex hover:rounded-none hover:duration-200 ml-auto mb-10 -mt-10 hover:bg-white hover:text-teal-600 md:[45%]">
              <ShoppingCart />
              </button>
           </div>
