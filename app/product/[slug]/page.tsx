@@ -3,9 +3,7 @@ import { Product } from "@/types/products";
 import { groq } from "next-sanity";
 import { urlFor } from "@/sanity/lib/client";
 import Image from "next/image";
-import { addToCart } from "@/app/components/actions/actions";
 import Link from "next/link";
-import Swal from "sweetalert2";
 
 interface ProductPageProps {
     params : Promise<{slug : string}>
