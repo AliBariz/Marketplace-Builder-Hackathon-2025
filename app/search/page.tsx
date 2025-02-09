@@ -91,12 +91,12 @@ function Products() {
   );
 }
 
- function Page() {
+export function Searchbar() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Products />
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <Search />
     </Suspense>
-  );
+  )
 }
 
-export default Page
