@@ -13,7 +13,7 @@ import { Product } from "@/types/products";
 import Swal from "sweetalert2";
 import { Suspense } from "react";
 
-function Products() {
+function Productsfilter() {
   const [products, setProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]); // New state for filtered products
   const searchParams = useSearchParams();
@@ -91,12 +91,12 @@ function Products() {
   );
 }
 
-export function Searchbar() {
+ function Page() {
   return (
-    // You could have a loading skeleton as the `fallback` too
-    <Suspense>
-      <Search />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Productsfilter />
     </Suspense>
-  )
+  );
 }
 
+export default Page
